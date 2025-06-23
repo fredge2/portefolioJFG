@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Web - Développeur Web Créatif</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">Portfolio</a>
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projets</a>
+            </li>
+            <li class="nav-item"><a href="#cv" class="nav-link">CV</a></li>
+            <li class="nav-item">
+              <a href="#future-projects" class="nav-link">Projets à venir</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="admin/index.html" class="nav-link">Administration</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <h1 class="animate-on-scroll">Développeur Web Créatif</h1>
+        <p class="animate-on-scroll">
+          Bienvenue sur mon portfolio. Je crée des sites web modernes,
+          attractifs et fonctionnels qui répondent aux besoins spécifiques de
+          chaque projet.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+          <a href="#cv" class="btn btn-secondary">Télécharger mon CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section">
+      <div class="container">
+        <div class="section-title">
+          <h2>À propos de moi</h2>
+          <p>
+            Développeur web passionné par la création de sites web modernes et
+            évolutifs
+          </p>
+        </div>
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="images/profile-placeholder.jpg"
+              alt="Photo de profil"
+              id="photo-preview"
+            />
+          </div>
+          <div class="about-text">
+            <p>
+              Je suis un développeur web spécialisé dans la création de sites
+              web modernes et attractifs. Mon approche combine créativité et
+              fonctionnalité pour offrir des expériences utilisateur
+              exceptionnelles.
+            </p>
+            <p>
+              Avec une expertise en HTML, CSS, JavaScript et diverses
+              technologies web, je développe des solutions sur mesure qui
+              répondent aux besoins spécifiques de chaque projet.
+            </p>
+            <p>
+              Ma passion pour le design et l'innovation me pousse à créer des
+              interfaces utilisateur intuitives et esthétiques, tout en veillant
+              à ce que chaque site soit parfaitement fonctionnel et optimisé
+              pour tous les appareils.
+            </p>
+
+            <!-- <div class="mt-3">
+              <h3 class="text-gradient-primary">Téléchargez ma photo</h3>
+              <p>
+                Vous pouvez télécharger votre photo pour personnaliser votre
+                portfolio.
+              </p>
+              <input
+                type="file"
+                id="photo-upload"
+                accept="image/*"
+                class="mt-2"
+              />
+            </div>
+        -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Mes Projets</h2>
+          <p>Découvrez mes réalisations web récentes</p>
+        </div>
+
+        <div class="filter-buttons mb-3">
+          <button class="btn filter-btn active" data-filter="all">Tous</button>
+          <button class="btn filter-btn" data-filter="web">Sites Web</button>
+          <button class="btn filter-btn" data-filter="app">Applications</button>
+          <button class="btn filter-btn" data-filter="design">Design</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Projet 1 -->
+          <div class="project-card web animate-on-scroll">
+            <div class="project-image">
+              <img
+                src="images/projects/projet-alimentaire.jpg"
+                alt="Projet Alimentaire Local"
+              />
+              <div class="project-overlay">
+                <h3>Projet Alimentaire Local</h3>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Projet Alimentaire Local</h3>
+              <p class="project-description">
+                Un site web présentant le concept de projet alimentaire
+                territorial, avec l'exemple d'Épinal et son application à
+                Oelenberg.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://fredge2.github.io/projet_alimentaire/"
+                  target="_blank"
+                  class="project-link view"
+                  >Voir le site</a
+                >
+                <a href="#" class="project-link code">Voir le code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 2 -->
+          <div class="project-card web animate-on-scroll">
+            <div class="project-image">
+              <img
+                src="images/projects/oelenberg.jpg"
+                alt="Réhabilitation d'Oelenberg"
+              />
+              <div class="project-overlay">
+                <h3>Réhabilitation d'Oelenberg</h3>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Réhabilitation d'Oelenberg</h3>
+              <p class="project-description">
+                Un site présentant le projet de réhabilitation du monastère
+                d'Oelenberg, avec son histoire et les propositions de
+                rénovation.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://fredge2.github.io/oelenberg_rehabilitation/"
+                  target="_blank"
+                  class="project-link view"
+                  >Voir le site</a
+                >
+                <a href="#" class="project-link code">Voir le code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 3 -->
+          <div class="project-card web animate-on-scroll">
+            <div class="project-image">
+              <img src="images/projects/laus.jpg" alt="Laus Perennis" />
+              <div class="project-overlay">
+                <h3>Laus Perennis</h3>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Laus Perennis</h3>
+              <p class="project-description">
+                Un site dédié au projet Laus Perennis à Oelenberg, présentant la
+                tradition de la louange perpétuelle et son application
+                contemporaine.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://fredge2.github.io/laus/"
+                  target="_blank"
+                  class="project-link view"
+                  >Voir le site</a
+                >
+                <a href="#" class="project-link code">Voir le code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 4 -->
+          <div class="project-card app animate-on-scroll">
+            <div class="project-image">
+              <img src="images/projects/ohmyfood.jpg" alt="Ohmyfood" />
+              <div class="project-overlay">
+                <h3>Ohmyfood</h3>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Ohmyfood</h3>
+              <p class="project-description">
+                Une application web permettant aux utilisateurs de composer leur
+                menu et de réserver dans des restaurants gastronomiques.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">SASS</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://fredge2.github.io/Projet_3/"
+                  target="_blank"
+                  class="project-link view"
+                  >Voir le site</a
+                >
+                <a href="#" class="project-link code">Voir le code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 5 -->
+          <div class="project-card web animate-on-scroll">
+            <div class="project-image">
+              <img
+                src="images/projects/salon-coiffure.jpg"
+                alt="Salon de Coiffure"
+              />
+              <div class="project-overlay">
+                <h3>Salon de Coiffure</h3>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Salon de Coiffure</h3>
+              <p class="project-description">
+                Un site vitrine pour un salon de coiffure à Cornimont,
+                présentant les services, tarifs et produits proposés.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://fredge2.github.io/salon_coiffure/"
+                  target="_blank"
+                  class="project-link view"
+                  >Voir le site</a
+                >
+                <a href="#" class="project-link code">Voir le code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 6 -->
+          <div class="project-card web animate-on-scroll">
+            <div class="project-image">
+              <img
+                src="images/projects/paroisse-st-laurent.jpg"
+                alt="Paroisse St Laurent"
+              />
+              <div class="project-overlay">
+                <h3>Paroisse St Laurent</h3>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Paroisse St Laurent - La Bresse</h3>
+              <p class="project-description">
+                Site web complet pour la paroisse St Laurent avec système
+                d'administration sécurisé, gestion des évangiles et homélies, et
+                interface de lecture enrichie.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Admin Panel</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="projects/paroisse-details.html"
+                  class="project-link view"
+                  >Voir les détails</a
+                >
+                <a
+                  href="../paroisse_st_laurent/index.html"
+                  target="_blank"
+                  class="project-link demo"
+                  >Démo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 6 -->
+          <div class="project-card web animate-on-scroll">
+            <div class="project-image">
+              <img src="images/projects/randomoto.jpg" alt="RANDOMOTO BIKE" />
+              <div class="project-overlay">
+                <h3>RANDOMOTO BIKE</h3>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">RANDOMOTO BIKE</h3>
+              <p class="project-description">
+                Un site de présentation et de réservation pour une entreprise de
+                location de motos et trottinettes électriques à La Bresse.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://idvorqfa.manus.space"
+                  target="_blank"
+                  class="project-link view"
+                  >Voir le site</a
+                >
+                <a href="#" class="project-link code">Voir le code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Details Section (dynamically populated) -->
+        <div
+          id="project-details"
+          class="project-details mt-4"
+          style="display: none"
+        >
+          <div class="container">
+            <h2 id="project-detail-title" class="text-gradient-primary"></h2>
+            <div class="project-detail-content">
+              <div class="project-detail-image">
+                <img id="project-detail-image" src="" alt="Détail du projet" />
+              </div>
+              <div class="project-detail-info">
+                <p id="project-detail-description"></p>
+                <h3 class="mt-3">Technologies utilisées:</h3>
+                <ul
+                  id="project-detail-technologies"
+                  class="project-detail-tech-list"
+                ></ul>
+                <div class="project-detail-links mt-3">
+                  <a
+                    id="project-detail-live"
+                    href="#"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Voir le site</a
+                  >
+                  <a
+                    id="project-detail-code"
+                    href="#"
+                    target="_blank"
+                    class="btn btn-secondary"
+                    >Voir le code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="cv-section section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Mon CV</h2>
+          <p>
+            Téléchargez mon curriculum vitae pour en savoir plus sur mon
+            parcours et mes compétences
+          </p>
+        </div>
+        <div class="cv-container">
+          <div class="cv-preview">
+            <iframe
+              id="cv-preview-frame"
+              src="downloads/cv-preview.html"
+              width="100%"
+              height="500px"
+            ></iframe>
+          </div>
+          <div class="cv-download">
+            <h3>Téléchargez mon CV</h3>
+            <p>
+              Vous pouvez télécharger mon CV dans différents formats selon vos
+              besoins.
+            </p>
+            <div class="download-options">
+              <div class="download-option">
+                <div class="download-icon">
+                  <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="download-info">
+                  <h4>Format PDF</h4>
+                  <p>Idéal pour l'impression et le partage</p>
+                </div>
+                <a
+                  href="downloads/cv.pdf"
+                  download
+                  class="download-button"
+                  data-preview="downloads/cv-preview.html"
+                >
+                  <i class="fas fa-download"></i>
+                </a>
+              </div>
+              <div class="download-option">
+                <div class="download-icon">
+                  <i class="fas fa-file-word"></i>
+                </div>
+                <div class="download-info">
+                  <h4>Format Word</h4>
+                  <p>Pour modification et personnalisation</p>
+                </div>
+                <a
+                  href="downloads/cv.docx"
+                  download
+                  class="download-button"
+                  data-preview="downloads/cv-preview.html"
+                >
+                  <i class="fas fa-download"></i>
+                </a>
+              </div>
+              <div class="download-option">
+                <div class="download-icon">
+                  <i class="fas fa-file-alt"></i>
+                </div>
+                <div class="download-info">
+                  <h4>Format Texte</h4>
+                  <p>Version simple et légère</p>
+                </div>
+                <a
+                  href="downloads/cv.txt"
+                  download
+                  class="download-button"
+                  data-preview="downloads/cv-preview.html"
+                >
+                  <i class="fas fa-download"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Future Projects Section -->
+    <section id="future-projects" class="future-projects section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Projets à venir</h2>
+          <p>Découvrez mes projets en cours de développement et ceux à venir</p>
+        </div>
+        <div class="future-projects-container">
+          <div class="future-project-card animate-on-scroll">
+            <div class="future-project-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="future-project-content">
+              <h3 class="future-project-title">E-commerce Artisanal</h3>
+              <p class="future-project-description">
+                Une plateforme de vente en ligne pour artisans locaux, avec
+                système de paiement sécurisé et gestion des commandes.
+              </p>
+              <span class="future-project-status">En développement</span>
+            </div>
+          </div>
+          <div class="future-project-card animate-on-scroll">
+            <div class="future-project-icon">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="future-project-content">
+              <h3 class="future-project-title">
+                Application de Gestion d'Événements
+              </h3>
+              <p class="future-project-description">
+                Une application web permettant de créer, gérer et promouvoir des
+                événements locaux avec billetterie intégrée.
+              </p>
+              <span class="future-project-status">Planifié</span>
+            </div>
+          </div>
+          <div class="future-project-card animate-on-scroll">
+            <div class="future-project-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <div class="future-project-content">
+              <h3 class="future-project-title">Bibliothèque Numérique</h3>
+              <p class="future-project-description">
+                Une plateforme de gestion et de partage de ressources
+                documentaires pour institutions culturelles.
+              </p>
+              <span class="future-project-status">Concept</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="add-project-form mt-4">
+          <h3 class="text-gradient-primary mb-2">Ajouter un nouveau projet</h3>
+          <p class="mb-3">
+            Utilisez ce formulaire pour ajouter de nouveaux projets à votre
+            liste de projets à venir.
+          </p>
+          <form id="add-project-form">
+            <div class="form-group">
+              <label for="project-title" class="form-label"
+                >Titre du projet</label
+              >
+              <input
+                type="text"
+                id="project-title"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="project-description" class="form-label"
+                >Description</label
+              >
+              <textarea
+                id="project-description"
+                class="form-control"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="project-status" class="form-label">Statut</label>
+              <select id="project-status" class="form-control">
+                <option value="Concept">Concept</option>
+                <option value="Planifié">Planifié</option>
+                <option value="En développement">En développement</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">
+              Ajouter le projet
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add New Page Section -->
+    <section id="add-page" class="add-page-section section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Ajouter une nouvelle page</h2>
+          <p>Créez facilement de nouvelles pages pour votre portfolio</p>
+        </div>
+        <div class="add-page-form">
+          <div class="form-group">
+            <label for="page-title" class="form-label">Titre de la page</label>
+            <input type="text" id="page-title" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="page-content" class="form-label">Contenu</label>
+            <textarea
+              id="page-content"
+              class="form-control"
+              rows="10"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary mt-2"
+            onclick="createNewPage()"
+          >
+            Créer la page
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>N'hésitez pas à me contacter pour discuter de vos projets</p>
+        </div>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3 class="text-gradient-primary mb-3">Mes coordonnées</h3>
+            <div class="contact-detail">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>frederic.gehin.jobs@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h4>Téléphone</h4>
+                <p>+33 6 11 12 XX XX</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Localisation</h4>
+                <p>Grand Est, France</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3 class="text-gradient-primary mb-3">Envoyez-moi un message</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Nom</label>
+                <input type="text" id="name" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="subject" class="form-label">Sujet</label>
+                <input type="text" id="subject" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary mt-2">
+                Envoyer
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-logo">Portfolio</div>
+        <ul class="footer-links">
+          <li class="footer-link"><a href="#home">Accueil</a></li>
+          <li class="footer-link"><a href="#projects">Projets</a></li>
+          <li class="footer-link"><a href="#cv">CV</a></li>
+          <li class="footer-link"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Portfolio Web. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

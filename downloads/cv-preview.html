@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aperçu du CV</title>
+    <style>
+        :root {
+            --gradient-primary: linear-gradient(135deg, #0ebeff, #ff42b3);
+            --gradient-secondary: linear-gradient(135deg, #7bff0f, #ffa742);
+            --color-text-dark: #333333;
+            --color-text-light: #ffffff;
+            --color-background: #f9f9f9;
+            --font-primary: 'Poppins', sans-serif;
+            --font-secondary: 'Montserrat', sans-serif;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --border-radius-md: 8px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-primary), Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--color-text-dark);
+            background-color: var(--color-background);
+            padding: var(--spacing-md);
+        }
+        
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius-md);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cv-header {
+            text-align: center;
+            margin-bottom: var(--spacing-md);
+            padding-bottom: var(--spacing-md);
+            border-bottom: 1px solid #eee;
+        }
+        
+        .cv-name {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-xs);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .cv-title {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+            color: #666;
+        }
+        
+        .cv-contact {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+        }
+        
+        .cv-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .cv-section {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .cv-section-title {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+            padding-bottom: 5px;
+            border-bottom: 2px solid;
+            border-image: var(--gradient-primary);
+            border-image-slice: 1;
+        }
+        
+        .cv-item {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .cv-item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .cv-item-title {
+            font-weight: 600;
+            color: #0ebeff;
+        }
+        
+        .cv-item-subtitle {
+            font-style: italic;
+        }
+        
+        .cv-item-date {
+            color: #666;
+        }
+        
+        .cv-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .cv-skill {
+            background: var(--gradient-secondary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .cv-languages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+        }
+        
+        .cv-language {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .cv-language-name {
+            font-weight: 600;
+        }
+        
+        .cv-language-level {
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .cv-header {
+                text-align: left;
+            }
+            
+            .cv-contact {
+                justify-content: flex-start;
+            }
+            
+            .cv-item-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <header class="cv-header">
+            <h1 class="cv-name">Prénom NOM</h1>
+            <h2 class="cv-title">Développeur Web Créatif</h2>
+            <div class="cv-contact">
+                <div class="cv-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>contact@monportfolio.fr</span>
+                </div>
+                <div class="cv-contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+33 6 12 34 56 78</span>
+                </div>
+                <div class="cv-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Grand Est, France</span>
+                </div>
+            </div>
+        </header>
+        
+        <section class="cv-section">
+            <h3 class="cv-section-title">Profil</h3>
+            <p>Développeur web passionné avec une expertise en création de sites web modernes, attractifs et évolutifs. Je combine créativité et fonctionnalité pour offrir des expériences utilisateur exceptionnelles, tout en veillant à ce que chaque projet soit parfaitement adapté aux besoins spécifiques du client.</p>
+        </section>
+        
+        <section class="cv-section">
+            <h3 class="cv-section-title">Expérience professionnelle</h3>
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <h4 class="cv-item-title">Développeur Web Freelance</h4>
+                    <span class="cv-item-date">2022 - Présent</span>
+                </div>
+                <h5 class="cv-item-subtitle">Indépendant</h5>
+                <ul>
+                    <li>Conception et développement de sites web pour divers clients</li>
+                    <li>Création de sites vitrines, portfolios et plateformes interactives</li>
+                    <li>Optimisation SEO et amélioration des performances</li>
+                    <li>Maintenance et mise à jour de sites existants</li>
+                </ul>
+            </div>
+            
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <h4 class="cv-item-title">Développeur Front-end</h4>
+                    <span class="cv-item-date">2020 - 2022</span>
+                </div>
+                <h5 class="cv-item-subtitle">Agence Web XYZ</h5>
+                <ul>
+                    <li>Développement d'interfaces utilisateur pour sites web et applications</li>
+                    <li>Collaboration avec les designers pour transformer les maquettes en code</li>
+                    <li>Optimisation des performances et de l'accessibilité</li>
+                    <li>Participation aux réunions client et aux phases de conception</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="cv-section">
+            <h3 class="cv-section-title">Formation</h3>
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <h4 class="cv-item-title">Master en Développement Web</h4>
+                    <span class="cv-item-date">2018 - 2020</span>
+                </div>
+                <h5 class="cv-item-subtitle">Université de Strasbourg</h5>
+                <p>Spécialisation en technologies web modernes et expérience utilisateur</p>
+            </div>
+            
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <h4 class="cv-item-title">Licence en Informatique</h4>
+                    <span class="cv-item-date">2015 - 2018</span>
+                </div>
+                <h5 class="cv-item-subtitle">Université de Nancy</h5>
+                <p>Formation générale en informatique avec option développement web</p>
+            </div>
+        </section>
+        
+        <section class="cv-section">
+            <h3 class="cv-section-title">Compétences techniques</h3>
+            <div class="cv-skills">
+                <span class="cv-skill">HTML5</span>
+                <span class="cv-skill">CSS3</span>
+                <span class="cv-skill">JavaScript</span>
+                <span class="cv-skill">React</span>
+                <span class="cv-skill">Vue.js</span>
+                <span class="cv-skill">Node.js</span>
+                <span class="cv-skill">PHP</span>
+                <span class="cv-skill">MySQL</span>
+                <span class="cv-skill">MongoDB</span>
+                <span class="cv-skill">Git</span>
+                <span class="cv-skill">Responsive Design</span>
+                <span class="cv-skill">UI/UX Design</span>
+                <span class="cv-skill">SEO</span>
+                <span class="cv-skill">WordPress</span>
+            </div>
+        </section>
+        
+        <section class="cv-section">
+            <h3 class="cv-section-title">Langues</h3>
+            <div class="cv-languages">
+                <div class="cv-language">
+                    <span class="cv-language-name">Français</span>
+                    <span class="cv-language-level">(Langue maternelle)</span>
+                </div>
+                <div class="cv-language">
+                    <span class="cv-language-name">Anglais</span>
+                    <span class="cv-language-level">(Courant)</span>
+                </div>
+                <div class="cv-language">
+                    <span class="cv-language-name">Allemand</span>
+                    <span class="cv-language-level">(Intermédiaire)</span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cv-section">
+            <h3 class="cv-section-title">Centres d'intérêt</h3>
+            <p>Photographie, randonnée, nouvelles technologies, design graphique, voyages</p>
+        </section>
+    </div>
+</body>
+</html>

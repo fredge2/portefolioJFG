@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets à venir - Téléchargement des liens</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .projects-list {
+            margin-top: var(--spacing-md);
+        }
+        
+        .project-link-item {
+            background: white;
+            border-radius: var(--border-radius-md);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+            box-shadow: var(--box-shadow);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: var(--transition-fast);
+        }
+        
+        .project-link-item:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--box-shadow-hover);
+        }
+        
+        .project-link-info {
+            flex: 1;
+        }
+        
+        .project-link-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .project-link-description {
+            color: var(--color-text-dark);
+            margin-bottom: 5px;
+        }
+        
+        .project-link-url {
+            color: #0ebeff;
+            font-size: 0.9rem;
+            word-break: break-all;
+        }
+        
+        .project-link-actions {
+            display: flex;
+            gap: var(--spacing-xs);
+        }
+        
+        .project-link-button {
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--border-radius-sm);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: var(--transition-fast);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .project-link-button.download {
+            background: var(--gradient-secondary);
+            color: white;
+        }
+        
+        .project-link-button.visit {
+            background: var(--gradient-primary);
+            color: white;
+        }
+        
+        .project-link-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .add-link-form {
+            margin-top: var(--spacing-lg);
+            background: white;
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-md);
+            box-shadow: var(--box-shadow);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">Portfolio</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="../index.html#projects" class="nav-link">Projets</a></li>
+                    <li class="nav-item"><a href="../index.html#cv" class="nav-link">CV</a></li>
+                    <li class="nav-item"><a href="../index.html#future-projects" class="nav-link active">Projets à venir</a></li>
+                    <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h1>Téléchargement des liens de projets à venir</h1>
+                    <p>Accédez aux liens de mes projets en cours de développement et à venir</p>
+                </div>
+                
+                <div class="projects-list">
+                    <!-- Projet 1 -->
+                    <div class="project-link-item">
+                        <div class="project-link-info">
+                            <h3 class="project-link-title">E-commerce Artisanal</h3>
+                            <p class="project-link-description">Une plateforme de vente en ligne pour artisans locaux, avec système de paiement sécurisé et gestion des commandes.</p>
+                            <p class="project-link-url">https://github.com/monportfolio/ecommerce-artisanal</p>
+                        </div>
+                        <div class="project-link-actions">
+                            <a href="downloads/ecommerce-artisanal.txt" download class="project-link-button download">
+                                <i class="fas fa-download"></i> Télécharger
+                            </a>
+                            <a href="https://github.com/monportfolio/ecommerce-artisanal" target="_blank" class="project-link-button visit">
+                                <i class="fas fa-external-link-alt"></i> Visiter
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 2 -->
+                    <div class="project-link-item">
+                        <div class="project-link-info">
+                            <h3 class="project-link-title">Application de Gestion d'Événements</h3>
+                            <p class="project-link-description">Une application web permettant de créer, gérer et promouvoir des événements locaux avec billetterie intégrée.</p>
+                            <p class="project-link-url">https://github.com/monportfolio/event-manager</p>
+                        </div>
+                        <div class="project-link-actions">
+                            <a href="downloads/event-manager.txt" download class="project-link-button download">
+                                <i class="fas fa-download"></i> Télécharger
+                            </a>
+                            <a href="https://github.com/monportfolio/event-manager" target="_blank" class="project-link-button visit">
+                                <i class="fas fa-external-link-alt"></i> Visiter
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 3 -->
+                    <div class="project-link-item">
+                        <div class="project-link-info">
+                            <h3 class="project-link-title">Bibliothèque Numérique</h3>
+                            <p class="project-link-description">Une plateforme de gestion et de partage de ressources documentaires pour institutions culturelles.</p>
+                            <p class="project-link-url">https://github.com/monportfolio/digital-library</p>
+                        </div>
+                        <div class="project-link-actions">
+                            <a href="downloads/digital-library.txt" download class="project-link-button download">
+                                <i class="fas fa-download"></i> Télécharger
+                            </a>
+                            <a href="https://github.com/monportfolio/digital-library" target="_blank" class="project-link-button visit">
+                                <i class="fas fa-external-link-alt"></i> Visiter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="add-link-form">
+                    <h3 class="text-gradient-primary mb-2">Ajouter un nouveau lien de projet</h3>
+                    <p class="mb-3">Utilisez ce formulaire pour ajouter de nouveaux liens de projets à votre liste.</p>
+                    <form id="add-link-form">
+                        <div class="form-group">
+                            <label for="link-title" class="form-label">Titre du projet</label>
+                            <input type="text" id="link-title" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="link-description" class="form-label">Description</label>
+                            <textarea id="link-description" class="form-control" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="link-url" class="form-label">URL du projet</label>
+                            <input type="url" id="link-url" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2">Ajouter le lien</button>
+                    </form>
+                </div>
+                
+                <div class="mt-4">
+                    <h3 class="text-gradient-primary mb-2">Télécharger tous les liens</h3>
+                    <p class="mb-3">Vous pouvez télécharger tous les liens de projets à venir en un seul fichier.</p>
+                    <a href="downloads/all-projects.txt" download class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Télécharger tous les liens
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">Portfolio</div>
+            <ul class="footer-links">
+                <li class="footer-link"><a href="../index.html">Accueil</a></li>
+                <li class="footer-link"><a href="../index.html#projects">Projets</a></li>
+                <li class="footer-link"><a href="../index.html#cv">CV</a></li>
+                <li class="footer-link"><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Portfolio Web. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const addLinkForm = document.getElementById('add-link-form');
+            const projectsList = document.querySelector('.projects-list');
+            
+            if (addLinkForm && projectsList) {
+                addLinkForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const linkTitle = document.getElementById('link-title').value;
+                    const linkDescription = document.getElementById('link-description').value;
+                    const linkUrl = document.getElementById('link-url').value;
+                    
+                    if (linkTitle && linkDescription && linkUrl) {
+                        // Create new project link item
+                        const newLinkItem = document.createElement('div');
+                        newLinkItem.className = 'project-link-item';
+                        
+                        newLinkItem.innerHTML = `
+                            <div class="project-link-info">
+                                <h3 class="project-link-title">${linkTitle}</h3>
+                                <p class="project-link-description">${linkDescription}</p>
+                                <p class="project-link-url">${linkUrl}</p>
+                            </div>
+                            <div class="project-link-actions">
+                                <a href="#" class="project-link-button download">
+                                    <i class="fas fa-download"></i> Télécharger
+                                </a>
+                                <a href="${linkUrl}" target="_blank" class="project-link-button visit">
+                                    <i class="fas fa-external-link-alt"></i> Visiter
+                                </a>
+                            </div>
+                        `;
+                        
+                        projectsList.appendChild(newLinkItem);
+                        addLinkForm.reset();
+                        
+                        // Show success message
+                        const formMessage = document.createElement('div');
+                        formMessage.className = 'form-message success';
+                        formMessage.textContent = 'Lien ajouté avec succès!';
+                        
+                        addLinkForm.appendChild(formMessage);
+                        
+                        setTimeout(() => {
+                            formMessage.remove();
+                        }, 5000);
+                        
+                        // In a real application, this would also save the link to a database or file
+                        console.log('Nouveau lien ajouté:', { title: linkTitle, description: linkDescription, url: linkUrl });
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

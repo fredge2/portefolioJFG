@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paroisse St Laurent - Détails du Projet | Portfolio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-detail {
+            padding: 6rem 0 4rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        .project-hero {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .project-hero h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #B8860B, #DAA520);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .project-hero p {
+            font-size: 1.2rem;
+            color: #6c757d;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .project-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+        
+        .project-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .project-info h2 {
+            color: #B8860B;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        
+        .project-info h3 {
+            color: #2c3e50;
+            margin: 2rem 0 1rem 0;
+            font-size: 1.3rem;
+        }
+        
+        .project-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .project-info li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .project-info li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #B8860B;
+            font-weight: bold;
+        }
+        
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        
+        .tech-tag {
+            background: linear-gradient(135deg, #B8860B, #DAA520);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .project-btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #B8860B, #DAA520);
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, #4A90E2, #357ABD);
+            color: white;
+        }
+        
+        .project-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .project-images {
+            display: grid;
+            gap: 1rem;
+        }
+        
+        .project-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: #B8860B;
+            margin-bottom: 1rem;
+        }
+        
+        .back-btn {
+            position: fixed;
+            top: 100px;
+            left: 2rem;
+            background: linear-gradient(135deg, #6c757d, #495057);
+            color: white;
+            padding: 0.8rem 1.2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .back-btn:hover {
+            transform: translateX(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .project-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .project-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .back-btn {
+                position: relative;
+                top: auto;
+                left: auto;
+                margin-bottom: 2rem;
+                align-self: flex-start;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+        Retour au portfolio
+    </a>
+
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-hero">
+                <h1>Paroisse St Laurent - La Bresse</h1>
+                <p>Site web complet avec système d'administration sécurisé pour la gestion des évangiles, homélies et contenus spirituels</p>
+            </div>
+
+            <div class="project-content">
+                <div class="project-info">
+                    <h2><i class="fas fa-info-circle"></i> Informations du Projet</h2>
+                    
+                    <h3>Description</h3>
+                    <p>Site web moderne et spirituel développé pour la paroisse St Laurent de La Bresse (88250). Le projet combine un design religieux élégant avec des fonctionnalités avancées d'administration et de gestion de contenu.</p>
+                    
+                    <h3>Technologies Utilisées</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Admin Panel</span>
+                        <span class="tech-tag">Responsive Design</span>
+                        <span class="tech-tag">Local Storage</span>
+                    </div>
+                    
+                    <h3>Fonctionnalités Principales</h3>
+                    <ul>
+                        <li>Page de présentation de la paroisse</li>
+                        <li>Système de gestion des évangiles et homélies</li>
+                        <li>Interface d'administration sécurisée (code: 888888)</li>
+                        <li>Page de lecture enrichie avec images spirituelles</li>
+                        <li>Gestion des images spirituelles aléatoires</li>
+                        <li>Système de création de nouvelles pages</li>
+                        <li>Fonctionnalités de modification et suppression</li>
+                        <li>Design responsive adaptatif</li>
+                        <li>Thème religieux avec couleurs dorées et brunes</li>
+                    </ul>
+                    
+                    <h3>Défis Techniques</h3>
+                    <ul>
+                        <li>Authentification sécurisée côté client</li>
+                        <li>Gestion dynamique des contenus</li>
+                        <li>Interface d'administration intuitive</li>
+                        <li>Système d'images aléatoires</li>
+                        <li>Design spirituel et moderne</li>
+                    </ul>
+                    
+                    <div class="project-links">
+                        <a href="../../paroisse_st_laurent/index.html" target="_blank" class="project-btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Voir le site
+                        </a>
+                        <a href="../../paroisse_st_laurent/admin/index.html" target="_blank" class="project-btn btn-secondary">
+                            <i class="fas fa-cog"></i>
+                            Administration
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-images">
+                    <div class="project-image">
+                        <img src="../images/projects/paroisse-st-laurent.jpg" alt="Page d'accueil Paroisse St Laurent">
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-church"></i>
+                    </div>
+                    <h3>Design Spirituel</h3>
+                    <p>Interface élégante avec thème religieux, couleurs dorées et brunes, et images spirituelles pour accompagner la méditation.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Administration Sécurisée</h3>
+                    <p>Système d'authentification par code administrateur avec possibilité de modification du code et gestion complète des contenus.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Gestion des Évangiles</h3>
+                    <p>Interface dédiée pour ajouter, modifier et supprimer les évangiles et homélies avec page de lecture enrichie.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3>Images Spirituelles</h3>
+                    <p>Système d'images aléatoires qui changent automatiquement pour accompagner la lecture et la méditation.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Design Responsive</h3>
+                    <p>Interface adaptative qui s'ajuste parfaitement aux mobiles, tablettes et ordinateurs de bureau.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <h3>Extensibilité</h3>
+                    <p>Possibilité d'ajouter de nouvelles pages, images et fonctionnalités via l'interface d'administration.</p>
+                </div>
+            </div>
+
+            <div class="project-info">
+                <h2><i class="fas fa-lightbulb"></i> Approche de Développement</h2>
+                <p>Ce projet a été développé en mettant l'accent sur l'expérience utilisateur et la facilité d'administration. L'interface combine modernité et spiritualité, offrant un environnement propice à la méditation tout en restant fonctionnelle et intuitive.</p>
+                
+                <h3>Points Forts du Projet</h3>
+                <ul>
+                    <li>Interface d'administration complète et intuitive</li>
+                    <li>Système de sécurité adapté aux besoins</li>
+                    <li>Design spirituel et apaisant</li>
+                    <li>Fonctionnalités de gestion avancées</li>
+                    <li>Code propre et maintenable</li>
+                    <li>Performance optimisée</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
+

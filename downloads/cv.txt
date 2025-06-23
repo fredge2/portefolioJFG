@@ -1,0 +1,47 @@
+Prénom NOM
+Développeur Web Créatif
+contact@monportfolio.fr | +33 6 12 34 56 78 | Grand Est, France
+
+PROFIL
+------
+Développeur web passionné avec une expertise en création de sites web modernes, attractifs et évolutifs. Je combine créativité et fonctionnalité pour offrir des expériences utilisateur exceptionnelles, tout en veillant à ce que chaque projet soit parfaitement adapté aux besoins spécifiques du client.
+
+EXPÉRIENCE PROFESSIONNELLE
+--------------------------
+Développeur Web Freelance | 2022 - Présent
+Indépendant
+- Conception et développement de sites web pour divers clients
+- Création de sites vitrines, portfolios et plateformes interactives
+- Optimisation SEO et amélioration des performances
+- Maintenance et mise à jour de sites existants
+
+Développeur Front-end | 2020 - 2022
+Agence Web XYZ
+- Développement d'interfaces utilisateur pour sites web et applications
+- Collaboration avec les designers pour transformer les maquettes en code
+- Optimisation des performances et de l'accessibilité
+- Participation aux réunions client et aux phases de conception
+
+FORMATION
+---------
+Master en Développement Web | 2018 - 2020
+Université de Strasbourg
+Spécialisation en technologies web modernes et expérience utilisateur
+
+Licence en Informatique | 2015 - 2018
+Université de Nancy
+Formation générale en informatique avec option développement web
+
+COMPÉTENCES TECHNIQUES
+---------------------
+HTML5, CSS3, JavaScript, React, Vue.js, Node.js, PHP, MySQL, MongoDB, Git, Responsive Design, UI/UX Design, SEO, WordPress
+
+LANGUES
+-------
+Français (Langue maternelle)
+Anglais (Courant)
+Allemand (Intermédiaire)
+
+CENTRES D'INTÉRÊT
+----------------
+Photographie, randonnée, nouvelles technologies, design graphique, voyages
